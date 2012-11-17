@@ -84,9 +84,9 @@ function bones_custom_dashboard_widgets() {
 
 
 // removing the dashboard widgets
-add_action('admin_menu', 'disable_default_dashboard_widgets');
+// add_action('admin_menu', 'disable_default_dashboard_widgets');
 // adding any custom widgets
-add_action('wp_dashboard_setup', 'bones_custom_dashboard_widgets');
+// add_action('wp_dashboard_setup', 'bones_custom_dashboard_widgets');
 
 
 /************* CUSTOM LOGIN PAGE *****************/
@@ -120,7 +120,7 @@ you like.
 
 // Custom Backend Footer
 function bones_custom_admin_footer() {
-	echo '<span id="footer-thankyou">Developed by <a href="http://yoursite.com" target="_blank">Your Site Name</a></span>. Built using <a href="http://themble.com/bones" target="_blank">Bones</a>.';
+	echo '<span id="footer-thankyou">Developed by <a href="http://www.kadamwhite.com" target="_blank">K.Adam White</a></span>. Built using <a href="http://themble.com/bones" target="_blank">Bones</a>.';
 }
 
 // adding it to the admin area

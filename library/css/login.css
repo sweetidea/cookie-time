@@ -1,17 +1,32 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name: Sweet Idea
+Author: K.Adam White
 
 Stylesheet: Login Stylesheet
 
-This stylesheet is loaded (if admin.php is setup in your 
-functions file) on the login page. This way you can style 
+This stylesheet is loaded (if admin.php is setup in your
+functions file) on the login page. This way you can style
 the login page. It won't affect any other page, admin or front-end.
 
 For more info, check out the codex:
 http://codex.wordpress.org/Creating_Admin_Themes
 
 ******************************************************************/
+
+body.login {
+  background-color: #ff7f27;
+}
+.login #nav a,
+.login #backtoblog a {
+  color: #ffffff !important;
+  text-shadow: none;
+}
+.login #nav a:hover,
+.login #backtoblog a:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
 /* the form box */
 /*
 This is the Wordpress logo in the admin area.
