@@ -63,10 +63,7 @@ NAVIGATION STYLES
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
-			&:hover, &:focus {
-				background-color: #dedede;
-
-			}
+			&:hover, &:focus {}
 		}
 
 		&:first-child {}
@@ -150,20 +147,8 @@ BIKE GUY & SITE INTRO
 	padding-bottom: 3em;
 }
 .site-intro {
-	background: transparent @si-bike-guy right bottom no-repeat;
-
-	a {
-		color: @si-yellow;
-		font-weight: bold;
-		text-decoration: none;
-	}
-}
-#bike-guy {
-	float: right;
-	margin-top: 20px;
-	margin-left: 20px;
-	width: 327px;
-	height: 302px;
+	background: @si-bike-guy transparent right bottom no-repeat;
+	padding-right: 350px;
 }
 
 /*********************
@@ -279,6 +264,14 @@ SIDEBARS & ASIDES
 	.widget_text {}
 	.textwidget p {}
 
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+.post,
+.page {
+	padding: 0 2.2em;
+}
 
 /*********************
 FOOTER STYLES
@@ -307,5 +300,6 @@ mobile. Make sure to double check these!
 
 #fyi {
 	float: right;
+	margin-left: 1em;
 	width: 50%;
 }

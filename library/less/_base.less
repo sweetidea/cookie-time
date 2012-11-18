@@ -35,7 +35,7 @@ and will be used across all viewports.
 *********************/
 
 body {
-	font-family: @sans-serif;
+	font-family: @body-font-family;
 	font-size: 100%;
 	line-height: 1.5;
 	color: @si-light-text;
@@ -107,6 +107,8 @@ body {
 
 a, a:visited {
 	color: @link-color;
+	font-weight: bold;
+	text-decoration: none;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -234,8 +236,10 @@ nav {
 			the style.scss file where it's relevant. We want to
 			keep this file as small as possible!
 			*/
-			&:hover, &:focus {
-
+			&:hover,
+			&:focus {
+				color: @si-yellow;
+				background-color: @si-orange;
 			}
 		}
 
@@ -327,13 +331,8 @@ nav {
 			background-color: @si-dark-green;
 			color: @si-light-text;
 			margin-bottom: 2.2em;
-			padding: 0 2.2em;
+			padding: 0 1em;
 			.border-radius(10px);
-
-			a {
-				color: @si-yellow;
-				font-weight: bold;
-			}
 		}
 
 		/* post meta */
@@ -461,19 +460,23 @@ nav {
 	.bones_page_navi {
 
 		li {
+			color: @si-dark-text;
+			font-weight: bold;
 			float: left;
 			margin-left: 10px;
 
 			a {
-				padding: 3px 6px;
-				display: block;
+				color: @si-dark-text;
 				text-decoration: none;
+				display: block;
+				padding: 3px 5px;
 				position: relative;
 
 				&:hover,
 				&:focus {
-					color: #f01d4f;
-					text-decoration: underline;
+					background-color: @si-orange;
+					border-bottom: 2px solid @si-orange;
+					color: @si-yellow;
 				}
 			}
 
@@ -481,15 +484,14 @@ nav {
 
 		/* current page link */
 		li.bpn-current {
+			border-bottom: 2px solid @si-dark-text;
 			padding: 3px 6px;
-			border-bottom: 2px solid #f01d4f;
 			position: relative;
 
 			a {
 				/* hovering on current page link */
 				&:hover,
 				&:focus {}
-
 			}
 
 		} /* end .bones_page_navi .bpn-current */
@@ -500,7 +502,7 @@ nav {
 			font-weight: 700;
 
 			a {
-				padding: 0;
+				padding: 2px 6px 4px;
 			}
 		}
 
@@ -509,7 +511,6 @@ nav {
 		li.bpn-next-link a:hover,
 		li.bpn-first-page-link a:hover,
 		li.bpn-last-page-link a:hover {
-			background: none;
 		}
 
 		/* previous link */
@@ -697,15 +698,11 @@ nav {
 
 	/* comment meta */
 	.comment-meta {
-
 		a {}
-
 	}
 
 	.commentmetadata {
-
 		a {}
-
 	}
 
 	/* comment content */
@@ -784,7 +781,7 @@ nav {
 				-webkit-box-shadow: none;
 				   -moz-box-shadow: none;
 				    -ms-box-shadow: none;
-						box-shadow: none;
+				        box-shadow: none;
 			}
 		}
 
@@ -851,23 +848,21 @@ nav {
 
 			a {
 				color: @si-yellow;
+
+				&:hover,
+				&:focus {
+					color: @si-orange;
+				}
 			}
 		}
 
 		a {
 			color: @si-orange;
-			font-weight: bold;
-			text-decoration: none;
-		}
 
-		.timesince,
-		.tweet_time {
-			/* .timesince: Ryan's Twitter Widget
-			 * .tweet_time: Jetpack? */
-			display: block;
-			font-size: .9em;
-			font-style: italic;
-			font-weight: normal;
+			&:hover,
+			&:focus {
+				color: @si-yellow;
+			}
 		}
 
 		ul {
@@ -886,6 +881,15 @@ nav {
 			}
 		}
 	} // .widget
+
+	/* twitter widgets */
+	.timesince,
+	.tweet_time {
+		display: block;
+		font-size: .9em;
+		font-style: italic;
+		font-weight: normal;
+	}
 
 /*********************
 13. FOOTER STYLES

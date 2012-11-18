@@ -50,7 +50,6 @@
 				</div> <!-- end #inner-header -->
 
 				<div id="intro" class="site-intro wrap clearfix">
-					<div id="bike-guy"></div>
 					<div class="site-description">
 						<h2><?php bloginfo( 'description' ); ?></h2>
 						<p><strong>10PM to 3AM. Thurs­day, Fri­day, and Sat­ur­day.</strong></p>
