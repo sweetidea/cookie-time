@@ -42,12 +42,7 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 */
 require_once('library/admin.php'); // this comes turned off by default
 /*
-4. library/translation/translation.php
-    - adding support for other languages
-*/
-// require_once('library/translation/translation.php'); // this comes turned off by default
-/*
-5. library/theme-customization.php
+4. library/theme-customization.php
     - Adds header & footer content options to theme customizer
 */
 //require_once('library/theme-customization.php'); // this comes turned off by default
