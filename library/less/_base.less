@@ -326,8 +326,10 @@ nav {
 		.category-slug {}   /* style by category (i.e. category-videos) */
 		.tag-slug {}        /* style by tag (i.e. tag-news) */
 
-		.post,
-		.page {
+		/* .page gets applies to the <body> element on some templates */
+		/* Requiring a div parent avoids conflict with that class */
+		div .post,
+		div .page {
 			background-color: @si-dark-green;
 			color: @si-light-text;
 			margin-bottom: 2.2em;
