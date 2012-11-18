@@ -31,17 +31,26 @@ LAYOUT & GRID STYLES
 HEADER SYTLES
 *********************/
 
-.header {}
+.header {
+	background: @si-header-bg @si-blue center bottom no-repeat;
+}
 
-	#logo {}
+	#logo {
+		margin-bottom: 0;
+
+		a {
+			position: absolute;
+		}
+	}
 
 /*********************
 NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee;
 	border: 0;
+	margin-top: 85px;
+	padding-left: 300px;
 
 	li {
 		float: left;
@@ -133,26 +142,42 @@ NAVIGATION STYLES
 } /* end .nav */
 
 /*********************
+BIKE GUY & SITE INTRO
+*********************/
+
+.site-description {
+	padding-top: 60px;
+	padding-bottom: 3em;
+}
+.site-intro {
+	background: transparent @si-bike-guy right bottom no-repeat;
+
+	a {
+		color: @si-yellow;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+#bike-guy {
+	float: right;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 327px;
+	height: 302px;
+}
+
+/*********************
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {
-	margin-top: 2.2em;
-}
+.sidebar {}
 
-	.widgettitle {
-		border-bottom: 2px solid #444;
-		margin-bottom: 0.75em;
-	}
+	.widgettitle {}
 
 	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
 
 		ul {
 			li {
-				margin-bottom: 0.75em;
-
 				&:first-child {}
 				&:last-child {}
 				a {}
@@ -280,3 +305,7 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+#fyi {
+	float: right;
+	width: 50%;
+}

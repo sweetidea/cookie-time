@@ -46,6 +46,11 @@ require_once('library/admin.php'); // this comes turned off by default
     - adding support for other languages
 */
 // require_once('library/translation/translation.php'); // this comes turned off by default
+/*
+5. library/theme-customization.php
+    - Adds header & footer content options to theme customizer
+*/
+//require_once('library/theme-customization.php'); // this comes turned off by default
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 

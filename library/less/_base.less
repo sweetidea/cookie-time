@@ -35,10 +35,20 @@ and will be used across all viewports.
 *********************/
 
 body {
-	font-family: @serif;
+	font-family: @sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
-	color: #565656;
+	color: @si-light-text;
+	background-color: @si-green;
+}
+
+.float-list {
+	overflow: hidden;
+
+	li {
+		float: left;
+		margin-right: 10px;
+	}
 }
 
 /********************
@@ -124,7 +134,7 @@ a, a:visited {
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: @sans-serif;
+	font-family: @header-font-family;
 	text-rendering: optimizelegibility;
 	font-weight: 500;
 	/*
@@ -169,9 +179,23 @@ h5, .h5 {
 06. HEADER SYTLES
 *********************/
 
-.header {}
+.header {
+	background-color: @si-blue;
+}
 
-	#logo {}
+	#logo {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+
+		a {
+			background: @si-logo top left no-repeat;
+			height: 188px;
+			width: 284px;
+			color: transparent;
+			display: block;
+			margin: auto;
+		}
+	}
 
 /*********************
 07. NAVIGATION STYLES
@@ -182,20 +206,26 @@ all navs have a .nav class applied via
 the wp_menu function, this is so we can
 easily just write on group of styles for
 the navs on the site and our css is cleaner
-and moe scalable.
+and more scalable.
 */
 
+nav {
+	background-color: @si-yellow;
+}
+
 .nav {
-	border: 1px solid #ccc;
-	border-bottom: 0;
 
 	li {
 
 		a {
+			color: @si-orange;
 			display: block;
+			font-family: @header-font-family;
+			font-size: 1.25em;
+			font-weight: bold;
 			text-decoration: none;
+			text-transform: uppercase;
 			padding: 10px 10px;
-			background-color: #eee;
 			border-bottom: 1px solid #ccc;
 
 			/*
@@ -292,10 +322,24 @@ and moe scalable.
 		.category-slug {}   /* style by category (i.e. category-videos) */
 		.tag-slug {}        /* style by tag (i.e. tag-news) */
 
+		.post,
+		.page {
+			background-color: @si-dark-green;
+			color: @si-light-text;
+			margin-bottom: 2.2em;
+			padding: 0 2.2em;
+			.border-radius(10px);
+
+			a {
+				color: @si-yellow;
+				font-weight: bold;
+			}
+		}
+
 		/* post meta */
 		.byline {
-			color: #999;
-
+			color: darken(@si-light-text, 10%);
+			font-style: italic;
 			time {}
 		}
 
@@ -304,25 +348,18 @@ and moe scalable.
 
 			p {}
 
-
 			ul, ol, table, dl {}
 
 			ul, ol {
-
 				li {}
-
 			}
 
 			ul {
-
 				li {}
-
 			}
 
 			ol {
-
 				li {}
-
 			}
 
 			blockquote {
@@ -372,8 +409,7 @@ and moe scalable.
 		} /* end .entry-content */
 
 		.wp-caption {
-			background: #eee;
-			padding: 5px;
+			background: @si-dark-grey;
 
 			/* images inside wp-caption */
 			img {
@@ -800,13 +836,43 @@ and moe scalable.
 
 .sidebar {}
 
-	.widgettitle {}
-
 	.widget {
+		background-color: @si-dark-grey;
+		color: @si-light-text;
+		margin: 0 0 2.2em 0;
+		padding: 2.2em 2.2em 1em 2.2em;
+		.border-radius(10px);
+
+		.widgettitle {
+			border-bottom: 2px solid @si-light-text;
+			font-size: 1.5em;
+			margin-top: 0;
+			margin-bottom: 0.5em;
+
+			a {
+				color: @si-yellow;
+			}
+		}
+
+		a {
+			color: @si-orange;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.timesince,
+		.tweet_time {
+			/* .timesince: Ryan's Twitter Widget
+			 * .tweet_time: Jetpack? */
+			display: block;
+			font-size: .9em;
+			font-style: italic;
+			font-weight: normal;
+		}
 
 		ul {
-
 			li {
+				margin-bottom: 0.75em;
 
 				&:first-child {}
 
@@ -818,17 +884,23 @@ and moe scalable.
 				ul {}
 
 			}
-
 		}
-
-	}
+	} // .widget
 
 /*********************
 13. FOOTER STYLES
 *********************/
 
 .footer {
+	background-color: @si-dark-grey;
+	color: @si-light-text;
 	clear: both;
+
+	a {
+		color: @si-yellow;
+		font-weight: bold;
+		text-decoration: none;
+	}
 }
 
 	/*
