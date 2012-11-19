@@ -2,7 +2,7 @@
 
 ## A Bespoke WordPress theme for Sweet Idea
 
-Cookie Time is built on top of the [Bones](http://themble.com/bones) development theme, created by Eddie Machado. It is a mobile-first, responsive WordPress theme designed to support Sweet Idea's cookies and cookie-related activities. Cookie Time is based on a design and initial WordPress theme by Christina Yum.
+Cookie Time is built on top of the [Bones](http://themble.com/bones) development theme, created by Eddie Machado. It is a mobile-first, responsive WordPress theme designed to support Sweet Idea's cookies and cookie-related activities. Cookie Time is based on a design and initial WordPress theme by [Christina Yung](http://cmyung.com/).
 
 ### Credits & Acknowledgements
 
@@ -42,6 +42,6 @@ To view full Release & Update Notes, read the log.txt file inside the library fo
 **v0.0.6 update**
 
 - Initial theme creation based on [Bones theme](http://themble.com/bones/)
-- Implemented Sweet Idea look-and-feel based on original WordPress theme by Christina Yum
+- Implemented Sweet Idea look-and-feel based on original WordPress theme by [Christina Yung](http://cmyung.com/)
 - Removed SASS, added [wp-less](https://github.com/sanchothefat/wp-less) for direct LESS processing
 - Added media queries and associated styles for better mobile browsing

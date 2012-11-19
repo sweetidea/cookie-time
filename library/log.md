@@ -20,6 +20,6 @@ Author: K.Adam White
 **v0.0.6 update**
 
 - Initial theme creation based on [Bones theme](http://themble.com/bones/)
-- Implemented Sweet Idea look-and-feel based on original WordPress theme by Christina Yum
+- Implemented Sweet Idea look-and-feel based on original WordPress theme by [Christina Yung](http://cmyung.com/)
 - Removed SASS, added [wp-less](https://github.com/sanchothefat/wp-less) for direct LESS processing
 - Added media queries and associated styles for better mobile browsing
