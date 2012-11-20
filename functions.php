@@ -121,17 +121,10 @@ function bones_comments($comment, $args, $depth) {
 		<article id="comment-<?php comment_ID(); ?>" class="clearfix">
 			<header class="comment-author vcard">
 			    <?php
-			    /*
-			        this is the new responsive optimized comment image. It used the new HTML5 data-attribute to display comment gravatars on larger screens only. What this means is that on larger posts, mobile sites don't have a ton of requests for comment images. This makes load time incredibly fast! If you'd like to change it back, just replace it with the regular wordpress gravatar call:
-			        echo get_avatar($comment,$size='32',$default='<path_to_url>' );
-			    */
-			    ?>
-			    <!-- custom gravatar call -->
-			    <?php
-			    	// create variable
+			    	// create variable for custom gravatar call
 			    	$bgauthemail = get_comment_author_email();
 			    ?>
-			    <img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5($bgauthemail); ?>?s=32" class="load-gravatar avatar avatar-48 photo" height="32" width="32" src="<?php echo get_template_directory_uri(); ?>/img/nothing.gif" />
+			    <img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5($bgauthemail); ?>?s=64" class="load-gravatar avatar avatar-48 photo" height="64" width="64" src="<?php echo get_template_directory_uri(); ?>/img/nothing.gif" />
 			    <!-- end custom gravatar call -->
 				<?php printf(__('<cite class="fn">%s</cite>'), get_comment_author_link()) ?>
 				<time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time('F jS, Y'); ?> </a></time>
