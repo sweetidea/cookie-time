@@ -588,6 +588,14 @@ nav {
 
 .commentlist {
 
+	a {
+		color: @si-yellow;
+
+		&:hover {
+			color: @si-orange;
+		}
+	}
+
 	li {
 		position: relative;
 		clear: both;
@@ -642,10 +650,10 @@ nav {
 	/* general comment classes */
 	.alt {}
 	.odd {
-		background: #eee;
+		background: @si-dark-grey;
 	}
 	.even {
-		background: #fefefe;
+		background: darken(@si-dark-grey, 10%);
 	}
 	.parent {}
 	.comment {}
@@ -674,11 +682,9 @@ nav {
 			float: right;
 
 			a {
-				color: #999;
-				text-decoration: none;
+				font-weight: normal;
 
 				&:hover {
-					text-decoration: underline;
 				}
 
 			}
@@ -692,7 +698,7 @@ nav {
 			left: 10px;
 			padding: 2px;
 			border: 1px solid #cecece;
-			background: #fff;
+			background: @white;
 		}
 
 	} /* end .commentlist .vcard */
@@ -721,19 +727,20 @@ nav {
 
 	/* comment reply link */
 	.comment-reply-link {
-		text-decoration: none;
-		float: right;
-		background: #4598bb;
-		padding: 3px 5px;
-		color: #fff;
-		opacity: 0.65;
-		margin-bottom: 10px;
+		background: @si-orange;
+		color: @white;
 		font-weight: 700;
 		font-size: 0.9em;
+		text-decoration: none;
+		float: right;
+		margin-bottom: 10px;
+		padding: 3px 5px;
+		.border-radius;
 
 		&:hover,
 		&:focus {
-			opacity: 1;
+			background: @si-yellow;
+			color: @si-orange;
 		}
 
 	} /* end .commentlist .comment-reply-link */
