@@ -331,7 +331,6 @@ nav {
 		div .post,
 		div .page {
 			background-color: @si-dark-green;
-			color: @si-light-text;
 			margin-bottom: 2.2em;
 			padding: 0 1em;
 			.border-radius(10px);
@@ -668,7 +667,6 @@ nav {
 
 	/* vcard */
 	.vcard {
-		margin-left: 85px;
 
 		cite.fn {
 			font-weight: 700;
@@ -679,7 +677,9 @@ nav {
 		}
 
 		time {
-			float: right;
+			display: block;
+			font-size: .9em;
+			font-style: italic;
 
 			a {
 				font-weight: normal;
@@ -694,6 +694,7 @@ nav {
 		img.photo {}
 
 		img.avatar {
+			display: none;
 			position: absolute;
 			left: 15px;
 			margin-top: 5px;
@@ -716,7 +717,6 @@ nav {
 
 	/* comment content */
 	.comment_content {
-		margin-left: 85px;
 
 		p {
 			margin: 0.7335em 0 1.5em;
