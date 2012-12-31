@@ -44,6 +44,21 @@ tweeners.
 
 } // end of media query
 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	// Defines an interim style for landscape-format phones and portrait tablets
+	.nav {
+		li {
+			float: left;
+			text-align: center;
+			width: 50%;
+
+			&:nth-child(odd):last-child {
+				width: 100%;
+			}
+		}
+	}
+} // end of media query
+
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
