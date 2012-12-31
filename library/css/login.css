@@ -12,35 +12,46 @@ For more info, check out the codex:
 http://codex.wordpress.org/Creating_Admin_Themes
 
 ******************************************************************/
-
+/* the form box */
 body.login {
+  /*
+	This is the styling for the background of the admin area.
+	MAKE IT ORANGE.
+	*/
+
   background-color: #ff7f27;
+  /*
+	This is the Wordpress logo in the admin area.
+	*/
+
+  /*
+	You'll have to override some of the default styles
+	but since we're referencing the id, it should be easy.
+	*/
+
+  /* login button*/
+
 }
-.login #nav a,
-.login #backtoblog a {
+body.login #nav a,
+body.login #backtoblog a {
   color: #ffffff !important;
   text-shadow: none;
 }
-.login #nav a:hover,
-.login #backtoblog a:hover {
+body.login #nav a:hover,
+body.login #backtoblog a:hover {
   color: #ffffff !important;
   text-decoration: none;
 }
-
-/* the form box */
-/*
-This is the Wordpress logo in the admin area.
-*/
-.login h1 a {
+body.login h1 a {
   background: url('../../img/admin/login-logo.png') no-repeat top center;
   width: 326px;
   height: 67px;
   text-indent: -9999px;
   overflow: hidden;
   padding-bottom: 15px;
-  display: block; }
-
-form {
+  display: block;
+}
+body.login form {
   margin-left: 8px;
   padding: 26px 24px 46px;
   font-weight: normal;
@@ -53,10 +64,10 @@ form {
   -webkit-box-shadow: none;
   -khtml-box-shadow: none;
   -moz-box-shadow: none;
-  box-shadow: none; }
-
-body form .input {
-  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+  box-shadow: none;
+}
+body.login form .input {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   font-weight: 200;
   font-size: 24px;
   width: 97%;
@@ -69,10 +80,5 @@ body form .input {
   outline: none;
   -webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
   -moz-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
-  box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2); }
-
-/*
-You'll have to override some of the default styles
-but since we're referencing the id, it should be easy.
-*/
-/* login button*/
+  box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
+}
