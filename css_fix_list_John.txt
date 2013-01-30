@@ -1,2 +1,0 @@
-CSS Fixes
-As screen size gets smaller, padding should be removed on 768 div id="intro".
